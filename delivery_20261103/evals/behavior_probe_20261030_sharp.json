@@ -1,0 +1,491 @@
+{
+  "protocol": "behavior-summary-initial-slot-cohort-v1",
+  "status": "complete",
+  "engine_hash": "8dd675f2126458af",
+  "guards": {
+    "move_guard": 2,
+    "move_budget_tier": [
+      0,
+      0,
+      2,
+      4,
+      6,
+      8
+    ],
+    "max_moves_per_turn": 4,
+    "trinket_guard": 1,
+    "repeat_freeze_guard": 1,
+    "no_move_guard": 1
+  },
+  "engine_config": {
+    "max_turns": 100,
+    "turn_action_caps": [
+      100
+    ]
+  },
+  "seeds": [
+    9001
+  ],
+  "games_per_seed": 32,
+  "device": "cpu",
+  "models": [
+    {
+      "label": "gpu1_now",
+      "checkpoint": "/ai/ceshi/opponent_library_20261028/maintenance/optimization_20261029_01/runs/finite_anchor_eidfix_20261029/latest.pt",
+      "checkpoint_sha256": "54ff11f0d61b1cf20583d9b4bd79044c9a13fce32b0db05b41158710645d3596",
+      "iter": 9130,
+      "observation_version": 2,
+      "elapsed_seconds": 7.1,
+      "behavior": {
+        "n_games": 32,
+        "decisions": 5137,
+        "action_counts": {
+          "Choose": 1021,
+          "Buy": 680,
+          "Play": 1202,
+          "EndTurn": 481,
+          "Activate": 293,
+          "DarkGift": 96,
+          "Upgrade": 137,
+          "Refresh": 973,
+          "Sell": 50,
+          "Magnetize": 60,
+          "HeroPower": 36,
+          "Freeze": 108
+        },
+        "action_shares": {
+          "Choose": 0.1988,
+          "Buy": 0.1324,
+          "Play": 0.234,
+          "EndTurn": 0.0936,
+          "Activate": 0.057,
+          "DarkGift": 0.0187,
+          "Upgrade": 0.0267,
+          "Refresh": 0.1894,
+          "Sell": 0.0097,
+          "Magnetize": 0.0117,
+          "HeroPower": 0.007,
+          "Freeze": 0.021
+        },
+        "phase_action_counts": {
+          "t1-3": {
+            "Choose": 82,
+            "Buy": 67,
+            "Play": 108,
+            "EndTurn": 96,
+            "Activate": 25,
+            "DarkGift": 32,
+            "HeroPower": 10,
+            "Freeze": 21,
+            "Refresh": 10,
+            "Upgrade": 7,
+            "Magnetize": 1
+          },
+          "t4-6": {
+            "DarkGift": 64,
+            "Choose": 225,
+            "Play": 223,
+            "Activate": 54,
+            "Upgrade": 42,
+            "EndTurn": 96,
+            "Buy": 90,
+            "Refresh": 70,
+            "Freeze": 19,
+            "Sell": 16,
+            "HeroPower": 6,
+            "Magnetize": 7
+          },
+          "t7-9": {
+            "Play": 337,
+            "Activate": 78,
+            "Choose": 288,
+            "Upgrade": 33,
+            "Refresh": 248,
+            "EndTurn": 96,
+            "Buy": 185,
+            "Sell": 29,
+            "Magnetize": 15,
+            "Freeze": 46,
+            "HeroPower": 11
+          },
+          "t10+": {
+            "Choose": 426,
+            "Play": 534,
+            "Buy": 338,
+            "Upgrade": 55,
+            "EndTurn": 193,
+            "Refresh": 645,
+            "Freeze": 22,
+            "Activate": 136,
+            "HeroPower": 9,
+            "Magnetize": 37,
+            "Sell": 5
+          }
+        },
+        "decisions_per_turn_mean": 9.98,
+        "upgrades": {
+          "total": 137,
+          "per_game": 4.281,
+          "games_with_upgrade": 32,
+          "first_turn_mean": 4.06,
+          "first_turn_distribution": {
+            "4": 9,
+            "5": 16,
+            "2": 7
+          },
+          "all_turns_mean": 8.34,
+          "affordable_opportunities": 2459,
+          "affordable_taken": 137,
+          "mean_prob_when_legal_affordable": 0.0469
+        },
+        "tier_by_turn": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.219,
+          "4": 1.219,
+          "5": 1.5,
+          "6": 2.062,
+          "7": 2.531,
+          "8": 3.062,
+          "9": 3.438,
+          "10": 3.562,
+          "11": 3.938,
+          "12": 4.312,
+          "13": 4.655,
+          "14": 5.038,
+          "15": 5.5,
+          "16": 5.636,
+          "17": 5.875,
+          "18": 6.0,
+          "19": 6.0
+        },
+        "final_tier_distribution": {
+          "6": 21,
+          "3": 5,
+          "5": 4,
+          "4": 2
+        },
+        "gold": {
+          "endturn_gold_mean": 0.62,
+          "endturn_wasted_share": 0.0665
+        },
+        "hero_power": {
+          "uses": 36,
+          "per_game": 1.125,
+          "games_with_use": 14,
+          "first_use_turn_mean": 5.14
+        },
+        "dark_gift": {
+          "uses": 96,
+          "games_with_use": 32
+        },
+        "trinket": {
+          "pending_decisions": 68,
+          "choices": 68,
+          "choice_turns_mean": 7.43,
+          "guard_masked_total": 6
+        },
+        "pending_decision_counts": {
+          "hero_select": 32,
+          "discover": 256,
+          "none": 4116,
+          "target": 605,
+          "trinket": 68,
+          "choose_one": 55,
+          "hero_power_choice": 5
+        },
+        "shop": {
+          "buys": 680,
+          "buys_per_game": 21.25,
+          "spell_buys": 500,
+          "minion_buys": 180,
+          "spell_names": {
+            "Winner's Bread": 22,
+            "Tavern Coin": 9,
+            "Leaf Through the Pages": 12,
+            "Defender's Rites": 13,
+            "Tricky Trousers": 14,
+            "Staff of Enrichment": 10,
+            "Chef's Choice": 10,
+            "Perfect Vision": 4,
+            "Tavern Dish Banana": 16,
+            "Might of Stormwind": 37,
+            "Enchanted Lasso": 8,
+            "Careful Investment": 13,
+            "Repair Job": 21,
+            "Time Management": 17,
+            "Shiny Ring": 19,
+            "Hasty Excavation": 9,
+            "Alliance Flag": 21,
+            "Them Apples": 13,
+            "Search Through Time": 10,
+            "Boundless Potential": 5,
+            "Weapons Forge": 14,
+            "Misplaced Tea Set": 13,
+            "Overconfidence": 12,
+            "Energizing Chamber": 2,
+            "Easterly Winds": 3,
+            "Healthy Bounty": 21,
+            "Selfish Bounty": 16,
+            "Fortify": 18,
+            "Planar Telescope": 9,
+            "Eonar's Favor": 7,
+            "Hostile Bounty": 11,
+            "Wave of Gold": 3,
+            "Robust Evolution": 4,
+            "Friendly Bounty": 6,
+            "Boon of Beetles": 8,
+            "Natural Blessing": 7,
+            "Mighty Dragonbreath": 8,
+            "Brood of Nozdormu": 3,
+            "Strike Oil": 8,
+            "Recruit a Trainee": 3,
+            "A New Sprout": 3,
+            "Blood Gem Barrage": 4,
+            "Cloning Conch": 1,
+            "Sludge Corrosion": 9,
+            "Wealthy Bounty": 4,
+            "Gem Confiscation": 1,
+            "Upper Hand": 1,
+            "Tomb Turning": 3,
+            "Methodical Madness": 2,
+            "Contracted Corpse": 2,
+            "Seafood Stew": 5,
+            "Unmasked Identity": 2,
+            "Eyes of the Earth Mother": 1,
+            "Forest's Bounty": 2,
+            "Lost Staff of Hamuul": 1
+          },
+          "refresh": 973,
+          "sells": 50
+        },
+        "guard": {
+          "move_blocked": 0,
+          "move_hit": 0,
+          "repeat_freeze_blocked": 108
+        },
+        "placements": {
+          "mean": 1.844,
+          "top4": 1.0,
+          "win": 0.4375
+        }
+      }
+    },
+    {
+      "label": "gpu2_now",
+      "checkpoint": "/ai/ceshi/opponent_library_20261028/maintenance/optimization_20261029_01/runs/finite_anchor_fastlr_eidfix_20261029/latest.pt",
+      "checkpoint_sha256": "7978efe5a16f6e7c8b5b1bdc26ae87a5b6b970f338e9d070596dbe82cb88ed63",
+      "iter": 10780,
+      "observation_version": 2,
+      "elapsed_seconds": 28.4,
+      "behavior": {
+        "n_games": 32,
+        "decisions": 22393,
+        "action_counts": {
+          "Choose": 635,
+          "Buy": 291,
+          "Play": 4366,
+          "EndTurn": 453,
+          "Activate": 6068,
+          "DarkGift": 96,
+          "Upgrade": 52,
+          "Cancel": 9674,
+          "Refresh": 507,
+          "Freeze": 83,
+          "Sell": 63,
+          "HeroPower": 89,
+          "Magnetize": 16
+        },
+        "action_shares": {
+          "Choose": 0.0284,
+          "Buy": 0.013,
+          "Play": 0.195,
+          "EndTurn": 0.0202,
+          "Activate": 0.271,
+          "DarkGift": 0.0043,
+          "Upgrade": 0.0023,
+          "Cancel": 0.432,
+          "Refresh": 0.0226,
+          "Freeze": 0.0037,
+          "Sell": 0.0028,
+          "HeroPower": 0.004,
+          "Magnetize": 0.0007
+        },
+        "phase_action_counts": {
+          "t1-3": {
+            "Choose": 104,
+            "Buy": 95,
+            "Play": 142,
+            "EndTurn": 96,
+            "Activate": 30,
+            "DarkGift": 32,
+            "Freeze": 11,
+            "Refresh": 10,
+            "HeroPower": 8,
+            "Magnetize": 1
+          },
+          "t4-6": {
+            "DarkGift": 64,
+            "Choose": 268,
+            "Play": 269,
+            "Activate": 84,
+            "Upgrade": 37,
+            "EndTurn": 96,
+            "Buy": 97,
+            "HeroPower": 9,
+            "Sell": 34,
+            "Refresh": 85,
+            "Freeze": 25,
+            "Cancel": 19,
+            "Magnetize": 10
+          },
+          "t7-9": {
+            "Activate": 1556,
+            "Cancel": 2512,
+            "Choose": 179,
+            "Upgrade": 13,
+            "Refresh": 214,
+            "Freeze": 36,
+            "Sell": 29,
+            "Play": 1145,
+            "Buy": 88,
+            "EndTurn": 96,
+            "HeroPower": 22,
+            "Magnetize": 4
+          },
+          "t10+": {
+            "Choose": 84,
+            "Play": 2810,
+            "Cancel": 7143,
+            "EndTurn": 165,
+            "Activate": 4398,
+            "Refresh": 198,
+            "Freeze": 11,
+            "Upgrade": 2,
+            "Buy": 11,
+            "HeroPower": 50,
+            "Magnetize": 1
+          }
+        },
+        "decisions_per_turn_mean": 45.79,
+        "upgrades": {
+          "total": 52,
+          "per_game": 1.625,
+          "games_with_upgrade": 32,
+          "first_turn_mean": 4.91,
+          "first_turn_distribution": {
+            "4": 9,
+            "6": 6,
+            "5": 17
+          },
+          "all_turns_mean": 5.88,
+          "affordable_opportunities": 19547,
+          "affordable_taken": 52,
+          "mean_prob_when_legal_affordable": 0.0021
+        },
+        "tier_by_turn": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0,
+          "5": 1.281,
+          "6": 1.812,
+          "7": 2.156,
+          "8": 2.5,
+          "9": 2.562,
+          "10": 2.562,
+          "11": 2.562,
+          "12": 2.552,
+          "13": 2.6,
+          "14": 2.579,
+          "15": 2.571,
+          "16": 2.667,
+          "17": 2.333,
+          "18": 2.0,
+          "19": 2.0
+        },
+        "final_tier_distribution": {
+          "3": 14,
+          "2": 15,
+          "4": 3
+        },
+        "gold": {
+          "endturn_gold_mean": 3.93,
+          "endturn_wasted_share": 0.415
+        },
+        "hero_power": {
+          "uses": 89,
+          "per_game": 2.781,
+          "games_with_use": 8,
+          "first_use_turn_mean": 3.5
+        },
+        "dark_gift": {
+          "uses": 96,
+          "games_with_use": 32
+        },
+        "trinket": {
+          "pending_decisions": 68,
+          "choices": 68,
+          "choice_turns_mean": 7.46,
+          "guard_masked_total": 21
+        },
+        "pending_decision_counts": {
+          "hero_select": 32,
+          "discover": 233,
+          "none": 12084,
+          "target": 8790,
+          "trinket": 68,
+          "choose_one": 1186
+        },
+        "shop": {
+          "buys": 291,
+          "buys_per_game": 9.09,
+          "spell_buys": 160,
+          "minion_buys": 131,
+          "spell_names": {
+            "Tavern Coin": 18,
+            "Alliance Flag": 14,
+            "Shiny Ring": 6,
+            "Repair Job": 6,
+            "Them Apples": 11,
+            "Tavern Dish Banana": 15,
+            "Might of Stormwind": 18,
+            "Chef's Choice": 3,
+            "Winner's Bread": 13,
+            "Leaf Through the Pages": 6,
+            "Fortify": 19,
+            "Time Management": 5,
+            "Careful Investment": 2,
+            "Overconfidence": 1,
+            "Misplaced Tea Set": 4,
+            "Boon of Beetles": 1,
+            "Search Through Time": 3,
+            "Hasty Excavation": 2,
+            "Seafood Stew": 1,
+            "Recruit a Trainee": 3,
+            "A New Sprout": 1,
+            "Hostile Bounty": 1,
+            "Healthy Bounty": 3,
+            "Enchanted Lasso": 1,
+            "Planar Telescope": 2,
+            "Strike Oil": 1
+          },
+          "refresh": 507,
+          "sells": 63
+        },
+        "guard": {
+          "move_blocked": 0,
+          "move_hit": 0,
+          "repeat_freeze_blocked": 83
+        },
+        "placements": {
+          "mean": 2.625,
+          "top4": 0.8438,
+          "win": 0.2188
+        }
+      }
+    }
+  ]
+}

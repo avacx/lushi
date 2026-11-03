@@ -1,0 +1,11 @@
+{
+  "frozen_utc": "2026-10-30T15:44:17Z",
+  "iter": 9190,
+  "sha256": "6227a54cc6e5e10e82df1d46f8dfebd56c18882a317fa3a4fb80d643a8f8631c",
+  "cum_steps": 301236224,
+  "guards": {
+    "no_move_guard": 1,
+    "repeat_freeze_guard": 1
+  },
+  "library_id": "033c0c35afb973cb"
+}

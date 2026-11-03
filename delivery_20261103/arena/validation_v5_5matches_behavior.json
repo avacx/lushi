@@ -1,0 +1,803 @@
+{
+  "protocol": "arena-validation-v5-5matches-behavior-v1",
+  "model": "gpu1 candidate_v5_promo iter 9190",
+  "matches": [
+    {
+      "tag": "p1",
+      "category": "bots",
+      "placement": 2,
+      "behavior": {
+        "n_games": 1,
+        "decisions": 69,
+        "action_counts": {
+          "Choose": 15,
+          "Buy": 12,
+          "Play": 12,
+          "EndTurn": 16,
+          "Activate": 3,
+          "DarkGift": 3,
+          "Upgrade": 5,
+          "Sell": 1,
+          "Refresh": 2
+        },
+        "action_shares": {
+          "Choose": 0.2174,
+          "Buy": 0.1739,
+          "Play": 0.1739,
+          "EndTurn": 0.2319,
+          "Activate": 0.0435,
+          "DarkGift": 0.0435,
+          "Upgrade": 0.0725,
+          "Sell": 0.0145,
+          "Refresh": 0.029
+        },
+        "phase_action_counts": {
+          "t1-3": {
+            "Buy": 2,
+            "Play": 3,
+            "EndTurn": 3,
+            "Activate": 2,
+            "Choose": 3,
+            "DarkGift": 1
+          },
+          "t4-6": {
+            "DarkGift": 2,
+            "Choose": 5,
+            "Play": 5,
+            "Buy": 4,
+            "Activate": 1,
+            "EndTurn": 3,
+            "Upgrade": 1,
+            "Sell": 1,
+            "Refresh": 1
+          },
+          "t7-9": {
+            "Buy": 6,
+            "EndTurn": 3,
+            "Upgrade": 2,
+            "Choose": 1,
+            "Play": 1,
+            "Refresh": 1
+          },
+          "t10+": {
+            "Choose": 6,
+            "Play": 3,
+            "Upgrade": 2,
+            "EndTurn": 7
+          }
+        },
+        "decisions_per_turn_mean": 4.06,
+        "upgrades": {
+          "total": 5,
+          "per_game": 5.0,
+          "games_with_upgrade": 1,
+          "first_turn_mean": 5.0,
+          "first_turn_distribution": {
+            "5": 1
+          },
+          "all_turns_mean": 8.6,
+          "affordable_opportunities": 0,
+          "affordable_taken": 0,
+          "mean_prob_when_legal_affordable": 0
+        },
+        "tier_by_turn": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0,
+          "5": 1.0,
+          "6": 2.0,
+          "7": 2.0,
+          "8": 2.0,
+          "9": 3.0,
+          "10": 4.0,
+          "11": 5.0,
+          "12": 6.0,
+          "13": 6.0,
+          "14": 6.0,
+          "15": 6.0,
+          "16": 6.0
+        },
+        "final_tier_distribution": {
+          "6": 1
+        },
+        "gold": {
+          "endturn_gold_mean": 3.56,
+          "endturn_wasted_share": 0.3125
+        },
+        "hero_power": {
+          "uses": 0,
+          "per_game": 0.0,
+          "games_with_use": 0,
+          "first_use_turn_mean": 0
+        },
+        "dark_gift": {
+          "uses": 3,
+          "games_with_use": 1
+        },
+        "trinket": {
+          "pending_decisions": 2,
+          "choices": 2,
+          "choice_turns_mean": 7.5,
+          "guard_masked_total": 6
+        },
+        "pending_decision_counts": {
+          "hero_select": 1,
+          "none": 54,
+          "target": 6,
+          "discover": 5,
+          "trinket": 2,
+          "choose_one": 1
+        },
+        "shop": {
+          "buys": 12,
+          "buys_per_game": 12.0,
+          "spell_buys": 1,
+          "minion_buys": 11,
+          "spell_names": {
+            "Careful Investment": 1
+          },
+          "refresh": 2,
+          "sells": 1
+        },
+        "guard": {
+          "move_blocked": 0,
+          "move_hit": 0,
+          "repeat_freeze_blocked": 0
+        },
+        "placements": {
+          "mean": 2.0,
+          "top4": 1.0,
+          "win": 0.0
+        }
+      }
+    },
+    {
+      "tag": "p2",
+      "category": "bots",
+      "placement": 4,
+      "behavior": {
+        "n_games": 1,
+        "decisions": 115,
+        "action_counts": {
+          "Choose": 19,
+          "Buy": 13,
+          "Play": 22,
+          "EndTurn": 11,
+          "DarkGift": 3,
+          "HeroPower": 1,
+          "Upgrade": 2,
+          "Refresh": 25,
+          "Freeze": 5,
+          "Sell": 5,
+          "Activate": 9
+        },
+        "action_shares": {
+          "Choose": 0.1652,
+          "Buy": 0.113,
+          "Play": 0.1913,
+          "EndTurn": 0.0957,
+          "DarkGift": 0.0261,
+          "HeroPower": 0.0087,
+          "Upgrade": 0.0174,
+          "Refresh": 0.2174,
+          "Freeze": 0.0435,
+          "Sell": 0.0435,
+          "Activate": 0.0783
+        },
+        "phase_action_counts": {
+          "t1-3": {
+            "Buy": 2,
+            "Play": 4,
+            "EndTurn": 3,
+            "DarkGift": 1,
+            "Choose": 2,
+            "HeroPower": 1
+          },
+          "t4-6": {
+            "DarkGift": 2,
+            "Choose": 7,
+            "Play": 8,
+            "Upgrade": 2,
+            "Refresh": 5,
+            "Freeze": 2,
+            "EndTurn": 3,
+            "Buy": 3,
+            "Sell": 4,
+            "Activate": 4
+          },
+          "t7-9": {
+            "Choose": 7,
+            "Play": 7,
+            "Sell": 1,
+            "Buy": 5,
+            "Activate": 3,
+            "Refresh": 10,
+            "Freeze": 2,
+            "EndTurn": 3
+          },
+          "t10+": {
+            "Choose": 3,
+            "Activate": 2,
+            "Refresh": 10,
+            "Buy": 3,
+            "Play": 3,
+            "EndTurn": 2,
+            "Freeze": 1
+          }
+        },
+        "decisions_per_turn_mean": 9.58,
+        "upgrades": {
+          "total": 2,
+          "per_game": 2.0,
+          "games_with_upgrade": 1,
+          "first_turn_mean": 4.0,
+          "first_turn_distribution": {
+            "4": 1
+          },
+          "all_turns_mean": 5.0,
+          "affordable_opportunities": 0,
+          "affordable_taken": 0,
+          "mean_prob_when_legal_affordable": 0
+        },
+        "tier_by_turn": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0,
+          "5": 2.0,
+          "6": 2.0,
+          "7": 3.0,
+          "8": 3.0,
+          "9": 3.0,
+          "10": 3.0,
+          "11": 3.0
+        },
+        "final_tier_distribution": {
+          "3": 1
+        },
+        "gold": {
+          "endturn_gold_mean": 0.18,
+          "endturn_wasted_share": 0.0
+        },
+        "hero_power": {
+          "uses": 1,
+          "per_game": 1.0,
+          "games_with_use": 1,
+          "first_use_turn_mean": 3.0
+        },
+        "dark_gift": {
+          "uses": 3,
+          "games_with_use": 1
+        },
+        "trinket": {
+          "pending_decisions": 2,
+          "choices": 2,
+          "choice_turns_mean": 6.5,
+          "guard_masked_total": 0
+        },
+        "pending_decision_counts": {
+          "hero_select": 1,
+          "none": 96,
+          "discover": 5,
+          "target": 8,
+          "choose_one": 3,
+          "trinket": 2
+        },
+        "shop": {
+          "buys": 13,
+          "buys_per_game": 13.0,
+          "spell_buys": 10,
+          "minion_buys": 3,
+          "spell_names": {
+            "Hasty Excavation": 1,
+            "Repair Job": 2,
+            "Search Through Time": 1,
+            "Seafood Stew": 1,
+            "Alliance Flag": 1,
+            "Shiny Ring": 2,
+            "Time Management": 1,
+            "Winner's Bread": 1
+          },
+          "refresh": 25,
+          "sells": 5
+        },
+        "guard": {
+          "move_blocked": 0,
+          "move_hit": 0,
+          "repeat_freeze_blocked": 5
+        },
+        "placements": {
+          "mean": 4.0,
+          "top4": 1.0,
+          "win": 0.0
+        }
+      }
+    },
+    {
+      "tag": "p3",
+      "category": "standard",
+      "placement": 6,
+      "behavior": {
+        "n_games": 1,
+        "decisions": 134,
+        "action_counts": {
+          "Choose": 31,
+          "Buy": 15,
+          "Play": 35,
+          "EndTurn": 11,
+          "HeroPower": 2,
+          "DarkGift": 3,
+          "Freeze": 6,
+          "Activate": 8,
+          "Upgrade": 4,
+          "Refresh": 18,
+          "Magnetize": 1
+        },
+        "action_shares": {
+          "Choose": 0.2313,
+          "Buy": 0.1119,
+          "Play": 0.2612,
+          "EndTurn": 0.0821,
+          "HeroPower": 0.0149,
+          "DarkGift": 0.0224,
+          "Freeze": 0.0448,
+          "Activate": 0.0597,
+          "Upgrade": 0.0299,
+          "Refresh": 0.1343,
+          "Magnetize": 0.0075
+        },
+        "phase_action_counts": {
+          "t1-3": {
+            "Buy": 3,
+            "Play": 4,
+            "EndTurn": 3,
+            "HeroPower": 1,
+            "Choose": 2,
+            "DarkGift": 1,
+            "Freeze": 1
+          },
+          "t4-6": {
+            "DarkGift": 2,
+            "Choose": 12,
+            "Play": 10,
+            "Activate": 3,
+            "Upgrade": 2,
+            "EndTurn": 3,
+            "Buy": 2,
+            "Refresh": 1,
+            "HeroPower": 1,
+            "Freeze": 1
+          },
+          "t7-9": {
+            "Buy": 5,
+            "Activate": 3,
+            "Play": 12,
+            "Choose": 12,
+            "Upgrade": 1,
+            "Refresh": 7,
+            "EndTurn": 3,
+            "Magnetize": 1,
+            "Freeze": 2
+          },
+          "t10+": {
+            "Choose": 5,
+            "Activate": 2,
+            "Play": 9,
+            "Buy": 5,
+            "Refresh": 10,
+            "Upgrade": 1,
+            "Freeze": 2,
+            "EndTurn": 2
+          }
+        },
+        "decisions_per_turn_mean": 11.17,
+        "upgrades": {
+          "total": 4,
+          "per_game": 4.0,
+          "games_with_upgrade": 1,
+          "first_turn_mean": 4.0,
+          "first_turn_distribution": {
+            "4": 1
+          },
+          "all_turns_mean": 6.75,
+          "affordable_opportunities": 0,
+          "affordable_taken": 0,
+          "mean_prob_when_legal_affordable": 0
+        },
+        "tier_by_turn": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0,
+          "5": 2.0,
+          "6": 2.0,
+          "7": 3.0,
+          "8": 4.0,
+          "9": 4.0,
+          "10": 4.0,
+          "11": 5.0
+        },
+        "final_tier_distribution": {
+          "5": 1
+        },
+        "gold": {
+          "endturn_gold_mean": 0,
+          "endturn_wasted_share": 0.0
+        },
+        "hero_power": {
+          "uses": 2,
+          "per_game": 2.0,
+          "games_with_use": 1,
+          "first_use_turn_mean": 2.0
+        },
+        "dark_gift": {
+          "uses": 3,
+          "games_with_use": 1
+        },
+        "trinket": {
+          "pending_decisions": 2,
+          "choices": 2,
+          "choice_turns_mean": 7.5,
+          "guard_masked_total": 0
+        },
+        "pending_decision_counts": {
+          "hero_select": 1,
+          "none": 103,
+          "target": 21,
+          "discover": 5,
+          "trinket": 2,
+          "choose_one": 2
+        },
+        "shop": {
+          "buys": 15,
+          "buys_per_game": 15.0,
+          "spell_buys": 11,
+          "minion_buys": 4,
+          "spell_names": {
+            "Alliance Flag": 1,
+            "Winner's Bread": 1,
+            "Hasty Excavation": 1,
+            "Temperature Shift": 1,
+            "Defender's Rites": 1,
+            "Time Management": 1,
+            "Boon of Beetles": 2,
+            "Selfish Bounty": 1,
+            "Shiny Ring": 1,
+            "Recruit a Trainee": 1
+          },
+          "refresh": 18,
+          "sells": 0
+        },
+        "guard": {
+          "move_blocked": 0,
+          "move_hit": 0,
+          "repeat_freeze_blocked": 6
+        }
+      }
+    },
+    {
+      "tag": "p4",
+      "category": "bots",
+      "placement": 2,
+      "behavior": {
+        "n_games": 1,
+        "decisions": 120,
+        "action_counts": {
+          "Choose": 31,
+          "Buy": 8,
+          "Play": 35,
+          "EndTurn": 16,
+          "DarkGift": 3,
+          "Activate": 12,
+          "Freeze": 1,
+          "Upgrade": 5,
+          "Magnetize": 7,
+          "Refresh": 2
+        },
+        "action_shares": {
+          "Choose": 0.2583,
+          "Buy": 0.0667,
+          "Play": 0.2917,
+          "EndTurn": 0.1333,
+          "DarkGift": 0.025,
+          "Activate": 0.1,
+          "Freeze": 0.0083,
+          "Upgrade": 0.0417,
+          "Magnetize": 0.0583,
+          "Refresh": 0.0167
+        },
+        "phase_action_counts": {
+          "t1-3": {
+            "Buy": 3,
+            "Play": 4,
+            "EndTurn": 3,
+            "Choose": 4,
+            "DarkGift": 1,
+            "Activate": 1,
+            "Freeze": 1
+          },
+          "t4-6": {
+            "DarkGift": 2,
+            "Choose": 9,
+            "Play": 5,
+            "Activate": 3,
+            "EndTurn": 3,
+            "Upgrade": 1,
+            "Buy": 2
+          },
+          "t7-9": {
+            "Play": 8,
+            "Activate": 2,
+            "Choose": 5,
+            "Upgrade": 2,
+            "EndTurn": 3,
+            "Buy": 3,
+            "Magnetize": 2,
+            "Refresh": 2
+          },
+          "t10+": {
+            "Choose": 13,
+            "Magnetize": 5,
+            "Play": 18,
+            "Upgrade": 2,
+            "Activate": 6,
+            "EndTurn": 7
+          }
+        },
+        "decisions_per_turn_mean": 7.06,
+        "upgrades": {
+          "total": 5,
+          "per_game": 5.0,
+          "games_with_upgrade": 1,
+          "first_turn_mean": 5.0,
+          "first_turn_distribution": {
+            "5": 1
+          },
+          "all_turns_mean": 8.6,
+          "affordable_opportunities": 0,
+          "affordable_taken": 0,
+          "mean_prob_when_legal_affordable": 0
+        },
+        "tier_by_turn": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0,
+          "5": 1.0,
+          "6": 2.0,
+          "7": 2.0,
+          "8": 3.0,
+          "9": 3.0,
+          "10": 4.0,
+          "11": 5.0,
+          "12": 5.0,
+          "13": 6.0,
+          "14": 6.0,
+          "15": 6.0,
+          "16": 6.0
+        },
+        "final_tier_distribution": {
+          "6": 1
+        },
+        "gold": {
+          "endturn_gold_mean": 3.06,
+          "endturn_wasted_share": 0.3125
+        },
+        "hero_power": {
+          "uses": 0,
+          "per_game": 0.0,
+          "games_with_use": 0,
+          "first_use_turn_mean": 0
+        },
+        "dark_gift": {
+          "uses": 3,
+          "games_with_use": 1
+        },
+        "trinket": {
+          "pending_decisions": 2,
+          "choices": 2,
+          "choice_turns_mean": 7.5,
+          "guard_masked_total": 0
+        },
+        "pending_decision_counts": {
+          "hero_select": 1,
+          "none": 89,
+          "choose_one": 2,
+          "target": 22,
+          "discover": 4,
+          "trinket": 2
+        },
+        "shop": {
+          "buys": 8,
+          "buys_per_game": 8.0,
+          "spell_buys": 5,
+          "minion_buys": 3,
+          "spell_names": {
+            "Alliance Flag": 1,
+            "Fortify": 1,
+            "Selfish Bounty": 1,
+            "Healthy Bounty": 2
+          },
+          "refresh": 2,
+          "sells": 0
+        },
+        "guard": {
+          "move_blocked": 0,
+          "move_hit": 0,
+          "repeat_freeze_blocked": 1
+        },
+        "placements": {
+          "mean": 2.0,
+          "top4": 1.0,
+          "win": 0.0
+        }
+      }
+    },
+    {
+      "tag": "p5",
+      "category": "bots",
+      "placement": 2,
+      "behavior": {
+        "n_games": 1,
+        "decisions": 127,
+        "action_counts": {
+          "Choose": 20,
+          "Buy": 21,
+          "Play": 34,
+          "EndTurn": 13,
+          "Activate": 4,
+          "DarkGift": 3,
+          "Refresh": 25,
+          "Upgrade": 5,
+          "Sell": 2
+        },
+        "action_shares": {
+          "Choose": 0.1575,
+          "Buy": 0.1654,
+          "Play": 0.2677,
+          "EndTurn": 0.1024,
+          "Activate": 0.0315,
+          "DarkGift": 0.0236,
+          "Refresh": 0.1969,
+          "Upgrade": 0.0394,
+          "Sell": 0.0157
+        },
+        "phase_action_counts": {
+          "t1-3": {
+            "Buy": 2,
+            "Play": 3,
+            "EndTurn": 3,
+            "Activate": 2,
+            "Choose": 3,
+            "DarkGift": 1,
+            "Refresh": 1
+          },
+          "t4-6": {
+            "DarkGift": 2,
+            "Choose": 10,
+            "Play": 8,
+            "Activate": 2,
+            "Upgrade": 2,
+            "EndTurn": 3,
+            "Buy": 2,
+            "Sell": 2,
+            "Refresh": 1
+          },
+          "t7-9": {
+            "Buy": 10,
+            "Play": 9,
+            "Refresh": 15,
+            "Choose": 4,
+            "EndTurn": 3,
+            "Upgrade": 1
+          },
+          "t10+": {
+            "Choose": 3,
+            "Play": 14,
+            "Buy": 7,
+            "Refresh": 8,
+            "EndTurn": 4,
+            "Upgrade": 2
+          }
+        },
+        "decisions_per_turn_mean": 9.07,
+        "upgrades": {
+          "total": 5,
+          "per_game": 5.0,
+          "games_with_upgrade": 1,
+          "first_turn_mean": 4.0,
+          "first_turn_distribution": {
+            "4": 1
+          },
+          "all_turns_mean": 8.2,
+          "affordable_opportunities": 0,
+          "affordable_taken": 0,
+          "mean_prob_when_legal_affordable": 0
+        },
+        "tier_by_turn": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0,
+          "5": 2.0,
+          "6": 2.0,
+          "7": 3.0,
+          "8": 3.0,
+          "9": 4.0,
+          "10": 4.0,
+          "11": 4.0,
+          "12": 5.0,
+          "13": 6.0
+        },
+        "final_tier_distribution": {
+          "6": 1
+        },
+        "gold": {
+          "endturn_gold_mean": 0.23,
+          "endturn_wasted_share": 0.0769
+        },
+        "hero_power": {
+          "uses": 0,
+          "per_game": 0.0,
+          "games_with_use": 0,
+          "first_use_turn_mean": 0
+        },
+        "dark_gift": {
+          "uses": 3,
+          "games_with_use": 1
+        },
+        "trinket": {
+          "pending_decisions": 2,
+          "choices": 2,
+          "choice_turns_mean": 7.5,
+          "guard_masked_total": 0
+        },
+        "pending_decision_counts": {
+          "hero_select": 1,
+          "none": 107,
+          "target": 10,
+          "discover": 5,
+          "timewarp": 2,
+          "trinket": 2
+        },
+        "shop": {
+          "buys": 21,
+          "buys_per_game": 21.0,
+          "spell_buys": 16,
+          "minion_buys": 5,
+          "spell_names": {
+            "Winner's Bread": 3,
+            "Careful Investment": 2,
+            "Repair Job": 2,
+            "Tavern Coin": 1,
+            "Blood Gem Barrage": 1,
+            "Leaf Through the Pages": 1,
+            "Hasty Excavation": 1,
+            "Search Through Time": 1,
+            "Gem Confiscation": 1,
+            "Boon of Beetles": 2,
+            "Butchering": 1
+          },
+          "refresh": 25,
+          "sells": 2
+        },
+        "guard": {
+          "move_blocked": 0,
+          "move_hit": 0,
+          "repeat_freeze_blocked": 0
+        },
+        "placements": {
+          "mean": 2.0,
+          "top4": 1.0,
+          "win": 0.0
+        }
+      }
+    }
+  ]
+}

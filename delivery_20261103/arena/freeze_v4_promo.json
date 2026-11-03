@@ -1,0 +1,10 @@
+{
+  "frozen_utc": "2026-10-30T03:27:56Z",
+  "iter": 6060,
+  "sha256": "e3294b3d7467d7a85a4acffb34ef913eb267b768482618d09c1efd4bb7fb05fd",
+  "cum_steps": 198836224,
+  "guards": {
+    "no_move_guard": 1,
+    "repeat_freeze_guard": 1
+  }
+}
